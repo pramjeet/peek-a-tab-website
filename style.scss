@@ -1,0 +1,47 @@
+@import "reset";
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  position: fixed;
+  height: 64px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+
+  .logo-div {
+    float: left;
+    display: flex;
+    align-items: center;
+
+    .logo-img {
+      float: left;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 24px;
+    }
+  }
+
+  nav {
+    float: right;
+    display: flex;
+    align-items: center;
+
+    ul {
+
+      li {
+        display: inline-block;
+        float: left;
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+
+}
