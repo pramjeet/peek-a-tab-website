@@ -5,36 +5,45 @@ body {
 }
 
 header {
-  position: fixed;
+  //position: fixed;
   height: 64px;
   top: 0;
   left: 0;
   width: 100%;
   border-bottom: 1px solid #eee;
-  padding: 10px;
 
-  .logo-div {
-    float: left;
+  #header-inner {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+  }
+
+  #logo {
+    flex: none;
     display: flex;
     align-items: center;
 
-    .logo-img {
+    #logo-img {
       float: left;
-      height: 40px;
-      margin-right: 10px;
+      height: 35px;
+      margin: 10px;
     }
 
-    .logo-text {
-      font-size: 24px;
+    #logo-text {
+      font-size: 20px;
+      font-weight: 400;
     }
   }
 
   nav {
-    float: right;
-    display: flex;
-    align-items: center;
+    flex: 1 1 auto;
 
     ul {
+      float: right;
 
       li {
         display: inline-block;
@@ -44,4 +53,46 @@ header {
     }
   }
 
+}
+
+#tagline-div {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  border-bottom: 1px solid #eee;
+
+  #tagline-div-inner {
+    text-align: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+
+    #tagline-text {
+
+      #tagline {
+        font-weight: 300;
+        font-size: 30px;
+        color: #2e7fb9;
+      }
+
+      #tagline-subtitle {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #696969;
+      }
+    }
+
+    #download-button {
+      display: block;
+      margin-top: 30px;
+
+      img {
+        border: 2px solid #2e7fb9;
+        max-width: 260px;
+        border-radius: 5px;
+        background: #eee;
+      }
+    }
+  }
 }
