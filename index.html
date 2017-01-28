@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">-->
     <link href="style.css" rel="stylesheet">
 
     <title>Peek-a-tab, Lightweight Tabs Manager for Google Chrome™</title>
@@ -12,31 +14,92 @@
 <body>
 
 <header>
-    <div id="header-inner">
+    <div class="inner-div" id="header-inner">
         <a id="logo">
-            <img id="logo-img" src="logo.png"/>
+            <img id="logo-img" src="images/logo.png"/>
             <h1 id="logo-text">Peek-a-Tab</h1>
         </a>
 
         <nav class="header-nav">
             <ul class="nav-items">
-                <li><a href="https://chrome.google.com/webstore/detail/peek-a-tab-tabs-manager-f/nnpdamdaknpnohmlbnmgphiodghbohop/reviews">Reviews</a></li>
-                <li><a href="https://chrome.google.com/webstore/detail/peek-a-tab-tabs-manager-f/nnpdamdaknpnohmlbnmgphiodghbohop/support">Support</a></li>
+                <li>
+                    <a href="https://chrome.google.com/webstore/detail/peek-a-tab-tabs-manager-f/nnpdamdaknpnohmlbnmgphiodghbohop/reviews">Reviews</a>
+                </li>
+                <li>
+                    <a href="https://chrome.google.com/webstore/detail/peek-a-tab-tabs-manager-f/nnpdamdaknpnohmlbnmgphiodghbohop/support">Support</a>
+                </li>
                 <li><a href="https://github.com/pramjeet/peek-a-tab">Github</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <div id="tagline-div">
-    <div id="tagline-div-inner">
+    <div class="inner-div" id="tagline-div-inner">
         <div id="tagline-text">
             <h2 id="tagline">Lightweight Tabs Manager for Google Chrome™</h2>
             <p id="tagline-subtitle">Search, preview, jump across, and close tabs quickly.</p>
         </div>
-        <a href="https://chrome.google.com/webstore/detail/peek-a-tab-tabs-manager-f/nnpdamdaknpnohmlbnmgphiodghbohop" id="download-button">
-            <img src="ChromeWebStore_Badge_v2_496x150.png"/>
+        <a href="https://chrome.google.com/webstore/detail/peek-a-tab-tabs-manager-f/nnpdamdaknpnohmlbnmgphiodghbohop"
+           id="download-button">
+            <img src="images/ChromeWebStore_Badge_v2_496x150.png"/>
         </a>
     </div>
 </div>
+
+<div>
+    <div class="inner-div" id="intro-div">
+
+        <img id="intro-tabs" src="images/tabs-list.png"/>
+
+        <h3 id="from-this-to-this">
+            <img id="arrow-from" src="images/arrow.png"/>
+            From this, to this
+            <img id="arrow-to" src="images/arrow.png"/>
+        </h3>
+
+        <div id="features-div">
+            <img id="intro-peek-a-tab-window" src="images/peek-a-tab-window.png"/>
+            <div id="features">
+
+                <div class="feature">
+                    <h4>Search title and url</h4>
+                    <p>
+                        Just start typing some characters you remember about from a tab's title or url.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>Quickly peek into a tab</h4>
+                    <p>
+                        Just hover or click on a tab in the list to see what's happening in it.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>Close multiple tabs at once</h4>
+                    <p>
+                        A cross icon will show up as you move your mouse on the list. Quickly close all the unnecessary
+                        tabs.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>Multi-window support</h4>
+                    <p>
+                        Shows all the tabs from all the windows of current user.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="inner-div">
+    <div id="youtube-video-wrapper">
+        <iframe src="https://www.youtube.com/embed/RPfhad3O-_k" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
 </body>
 </html>
