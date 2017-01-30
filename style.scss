@@ -105,7 +105,7 @@ header {
   text-align: center;
   margin-bottom: 20px;
 
-  #intro-tabs {
+  #from-image {
     width: 100%;
     margin: 20px auto;
   }
@@ -115,56 +115,108 @@ header {
     font-weight: 400;
     font-size: 20px;
     margin-bottom: 20px;
-    margin-right: -165px;
     display: inline-block;
+    padding: 10px;
 
-    #arrow-from {
+    &:before {
+      content: "\2196";
       position: absolute;
       width: 30px;
-      transform: rotate(-80deg);
-      top: -17px;
-      left: -33px;
+      transform: rotate(40deg);
+      top: -15px;
+      left: 20%;
+      font-weight: 900;
     }
 
-    #arrow-to {
+    &:after {
+      content: "\2196";
       position: absolute;
       width: 30px;
-      transform: rotate(80deg);
-      top: 5px;
-      right: -40px;
+      transform: rotate(-140deg);
+      bottom: -20px;
+      right: 20%;
+      font-weight: 900;
     }
   }
 
-  #features-div {
-    padding: 10px 0 0 30px;
+  #to-image-div {
+    position: relative;
+    width: 320px;
+    margin: 10px auto;
 
-    #intro-peek-a-tab-window {
-      width: 30%;
-      float: right;
+    #to-image {
+      width: 100%;
     }
 
-    #features {
-      float: left;
-      text-align: left;
-      width: 70%;
+    .feature {
+      position: absolute;
+      width: 300px;
 
-      .feature {
-        margin: 60px 0;
-        max-width: 400px;
-
-        h4 {
-          font-size: 18px;
-          font-weight: 400;
-          color: #696969;
-          line-height: 35px;
-        }
-
-        p {
-          color: #bcbcbc;
-          line-height: 20px;
-        }
+      h4 {
+        font-size: 18px;
+        font-weight: 400;
+        color: $primary-color;
+        line-height: 35px;
       }
+
+      p {
+        color: #696969;
+        line-height: 20px;
+        font-size: 14px;
+      }
+
+      &:nth-child(even) {
+        left: -330px;
+        text-align: right;
+      }
+
+      &:nth-child(odd) {
+        right: -330px;
+        text-align: left;
+      }
+
     }
+
+    @function feature-top-odd($n) {
+      @return (30)+((($n)-1)*80)+px;
+    }
+
+    @function feature-top-even($n) {
+      @return (30)+((($n)-2)*80)+px;
+    }
+
+    #feature1 {
+      top: feature-top-odd(1);
+    }
+
+    #feature2 {
+      top: feature-top-even(2);
+    }
+
+    #feature3 {
+      top: feature-top-odd(3);
+    }
+
+    #feature4 {
+      top: feature-top-even(4);
+    }
+
+    #feature5 {
+      top: feature-top-odd(5);
+    }
+
+    #feature6 {
+      top: feature-top-even(6);
+    }
+
+    #feature7 {
+      top: feature-top-odd(7);
+    }
+
+    #feature8 {
+      top: feature-top-even(8);
+    }
+
   }
 }
 
