@@ -6,6 +6,11 @@ body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
 
+a{
+  color: $primary-color;
+  text-decoration: none;
+}
+
 .inner-div {
   clear: both;
   position: relative;
@@ -117,24 +122,23 @@ header {
     margin-bottom: 20px;
     display: inline-block;
     padding: 10px;
+    color: black;
 
     &:before {
-      content: "\2196";
+      content: "\2191";
       position: absolute;
       width: 30px;
-      transform: rotate(40deg);
-      top: -15px;
-      left: 20%;
+      top: -10px;
+      left: 15%;
       font-weight: 900;
     }
 
     &:after {
-      content: "\2196";
+      content: "\2193";
       position: absolute;
       width: 30px;
-      transform: rotate(-140deg);
-      bottom: -20px;
-      right: 20%;
+      bottom: -10px;
+      right: 15%;
       font-weight: 900;
     }
   }
@@ -237,6 +241,7 @@ header {
   border: 2px solid $primary-color;
   margin: 20px 0;
   border-radius: 5px;
+  display: none;
 }
 
 #youtube-video-wrapper iframe {
